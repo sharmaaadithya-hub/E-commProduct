@@ -1,0 +1,98 @@
+@use "../../../styles/base/typography" as *;
+
+.navbar {
+  max-width: 1920px;
+  width: $full-width;
+
+  &__container {
+    max-width: 1290px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    align-items: center;
+  }
+
+  &__logo {
+    aspect-ratio: 162/32;
+    max-width: 162px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  // &--rigthSection{
+
+  // }
+
+  &__ul {
+    display: flex;
+    text-align: center;
+    gap: 30px;
+  }
+
+  &__li {
+    list-style: none;
+    font-family: lato;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 16px;
+    line-height: 150%;
+
+    &--blueColor{
+      color: #254b86;
+    }
+  }
+
+ 
+  &__li a {
+    text-decoration: none;
+    color: black;
+
+  }
+
+  &__leftSection {
+    display: flex;
+    text-align: center;
+    gap: 16px;
+  }
+
+  &__btn1 {
+    padding: 13px 16px 13px 16px;
+    color: black;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    font-family: lato;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &__btn2 {
+    padding: 13px 30px 13px 30px;
+    background-color: var(--Primary-800, #254b86);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-family: lato;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  &__leftSectionImg {
+    width: 48px;
+    height: 48px;
+    border-radius: 111px;
+    background: #ffffff;
+    margin: auto;
+    box-shadow: 0px 1px 10px 0px #0000001a;
+  }
+
+  &__leftSectionImg img {
+    aspect-ratio: 20/19.7;
+    margin-top: 13px;
+  }
+}
