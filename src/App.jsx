@@ -1,11 +1,11 @@
 import './global.scss'
+import './App.css'
 import Navbar from './components/shared/Navbar/Navbar';
-function App() {
-  
 
+function App() {
   return (
     <>
-     <Navbar />
+      <Navbar />
     </>
   )
 }
