@@ -20,14 +20,14 @@ function Navbar() {
 							{isNavOpen && (
 								<div className="navbar__mobileClose">
 									<button onClick={toggleNav}>
-										<img src="src\assets\cross.svg" alt="" />
+										<img src="src/assets/cross.svg" alt="" />
 									</button>
 								</div>
 							)}
 							{isNavOpen && (
 								<div className="navbar__mobileData">
 									<div className="navbar__mobileLogo">
-										<img src="src\assets\Frame 3992.png" alt="" />
+										<img src="src/assets/Frame 3992.png" alt="" />
 									</div>
 									<div className="navbar__mobileLogoContent">
 										<h2>Adithya Sharma</h2>
@@ -70,12 +70,12 @@ function Navbar() {
 						<button className="navbar__btn1">Sign Up</button>
 						<button className="navbar__btn2">Create A Listing</button>
 						<div className="navbar__leftSectionImg">
-							<img src="src\assets\Cart.png" alt="cart-icon" />
+							<img src="src/assets/cart.png" alt="cart-icon" />
 						</div>
 					</div>
 					<div className="navbar__hamburger">
 						<button onClick={toggleNav}>
-							<img src="src\assets\hamburger.svg" alt="" />
+							<img src="src/assets/hamburger.svg" alt="" />
 						</button>
 					</div>
 				</div>
