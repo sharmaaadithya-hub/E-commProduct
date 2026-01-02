@@ -1,0 +1,8 @@
+@use "./styles/base/reset.scss";
+@use "./components/shared/Navbar/Navbar.scss";
+
+.container {
+  max-width: 1290px;
+  width: 100%;
+  padding-inline: 40px;
+}

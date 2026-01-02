@@ -1,5 +1,16 @@
-@mixin reset {
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: lato;
+}
+
+menu,
+ol,
+ul {
+  list-style: none;
 }
