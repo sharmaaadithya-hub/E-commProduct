@@ -1,0 +1,241 @@
+@use "../../../styles/base/typography" as *;
+
+.navbar {
+  width: $full-width;
+
+  &__container {
+    max-width: 1290px;
+    width: 100%;
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-block: 16px;
+  }
+
+  &__logo {
+    aspect-ratio: 162/32;
+    max-width: 162px;
+    width: 100%;
+  }
+
+  &__ul {
+    display: flex;
+    text-align: center;
+    gap: 30px;
+
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  &__mobile {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    z-index: 999;
+    background: white;
+    height: 100%;
+    left: 2px;
+    text-align: center;
+    padding-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__mobileClose {
+    text-align: end;
+    margin-right: 115px;
+  }
+
+  &__mobileClose button {
+    font-size: 26px;
+    position: absolute;
+    background: transparent;
+    border: none;
+  }
+
+  &__mobileClose img {
+    max-width: 80px;
+    aspect-ratio: 120 / 57;
+  }
+
+  &__mobileData {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.574);
+  }
+
+  &__mobileLogo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffff;
+    margin: 0px auto;
+    box-shadow: 2px 5px 7px 1px rgba(0, 0, 0, 0.36);
+  }
+
+  &__mobileLogo img {
+    width: 100%;
+    margin-top: 38px;
+    margin-left: 18px;
+  }
+
+  &__mobileLogoContent {
+    width: 100%;
+    margin-block: 20px;
+
+    p {
+      margin-top: 2px;
+    }
+  }
+
+  &__mobileLogo h2 {
+    text-align: center;
+  }
+
+  &__mobileBtns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-inline: auto;
+    gap: 15px;
+    padding: 20px;
+    border-top: 1px solid rgba(128, 128, 128, 0.574);
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__mobileBtn1 {
+    padding: 12px 10px;
+    color: black;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    font-family: $font-family-lato;
+    font-weight: $font-weight-base;
+    font-size: $font-size-md;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.36);
+  }
+
+  &__mobileBtn2 {
+    padding: 10px 12px;
+    background-color: var(--Primary-800, #254b86);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: $font-family-lato;
+    font-weight: $font-weight-base;
+    font-size: $font-size-md;
+  }
+
+  &__li {
+    font-weight: $font-weight-base;
+    font-size: 17px;
+    padding: 10px;
+    cursor: pointer;
+
+    &--blueColor {
+      color: #254b86;
+    }
+
+    &:hover {
+      background-color: #a3a1a123;
+    }
+  }
+
+  &__li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  &__leftSection {
+    display: flex;
+    text-align: center;
+    gap: 16px;
+    @media (max-width: 1024px) {
+      gap: 3px;
+    }
+    @media (max-width: 992px) {
+      gap: 60px;
+    }
+    @media (max-width: 768px) {
+      margin-left: 50px;
+    }
+  }
+
+  &__btn1 {
+    padding: 13px 16px 13px 16px;
+    color: black;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    font-family: $font-family-lato;
+    font-weight: $font-weight-base;
+    font-size: $font-size-md;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.36);
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__btn2 {
+    padding: 13px 30px 13px 30px;
+    background-color: var(--Primary-800, #254b86);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-family: $font-family-lato;
+    font-weight: $font-weight-base;
+    font-size: $font-size-md;
+
+    @media (max-width: 998px) {
+      padding: 13px 15px 13px 15px;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  &__leftSectionImg {
+    width: 48px;
+    height: 48px;
+    border-radius: 111px;
+    background: #ffffff;
+    margin: auto;
+    box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.36);
+    @media (max-width: 768px) {
+      //  text-align: end;
+    }
+  }
+
+  &__leftSectionImg img {
+    aspect-ratio: 20/19.7;
+    margin-top: 13px;
+  }
+
+  &__hamburger {
+    display: none;
+
+    @media (max-width: 992px) {
+      display: block;
+    }
+  }
+
+  &__hamburger button {
+    background: #ffffff;
+    border: none;
+    font-size: 25px;
+  }
+  &__hamburger img {
+    aspect-ratio: 120 / 52;
+    max-width: 70px;
+    width: 100%;
+  }
+}
