@@ -1,5 +1,8 @@
-import React from "react";
 import { useState } from "react";
+import navLogo from "../../../assets/Frame3992.png";
+import navCart from "../../../assets/Cart.png";
+import navcrossIcon from "../../../assets/cross.svg";
+import navHamburgerIcon from "../../../assets/hamburger.svg";
 function Navbar() {
 	const [isNavOpen, setIsNavOpen] = useState(false);
 	const toggleNav = () => {
@@ -12,7 +15,7 @@ function Navbar() {
 				<div className="navbar__container container">
 					<img
 						className="navbar__logo"
-						src="src\assets\Frame 3992.png"
+						src={navLogo}
 						alt="logo-icon"
 					/>
 					<nav className="navbar__nav">
@@ -20,14 +23,14 @@ function Navbar() {
 							{isNavOpen && (
 								<div className="navbar__mobileClose">
 									<button onClick={toggleNav}>
-										<img src="src/assets/cross.svg" alt="" />
+										<img src={navcrossIcon} alt="" />
 									</button>
 								</div>
 							)}
 							{isNavOpen && (
 								<div className="navbar__mobileData">
 									<div className="navbar__mobileLogo">
-										<img src="src/assets/Frame 3992.png" alt="" />
+										<img src={navLogo}alt="" />
 									</div>
 									<div className="navbar__mobileLogoContent">
 										<h2>Adithya Sharma</h2>
@@ -70,12 +73,12 @@ function Navbar() {
 						<button className="navbar__btn1">Sign Up</button>
 						<button className="navbar__btn2">Create A Listing</button>
 						<div className="navbar__leftSectionImg">
-							<img src="src/assets/cart.png" alt="cart-icon" />
+							<img src={navCart} alt="cart-icon" />
 						</div>
 					</div>
 					<div className="navbar__hamburger">
 						<button onClick={toggleNav}>
-							<img src="src/assets/hamburger.svg" alt="" />
+							<img src={navHamburgerIcon} alt="" />
 						</button>
 					</div>
 				</div>
